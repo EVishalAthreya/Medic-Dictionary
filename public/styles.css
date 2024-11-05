@@ -1,0 +1,18 @@
+/* styles.css */
+h1 {
+    color: #2c3e50;
+  }
+  
+  button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  button:hover {
+    background-color: #2980b9;
+  }
+  
