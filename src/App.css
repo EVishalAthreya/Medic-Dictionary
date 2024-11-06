@@ -1,0 +1,162 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Styling for the header */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
+}
+
+/* Main container styling */
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+/* Sidebar (Favorites section) styling */
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  color: #333;
+}
+
+.favorites-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+li button {
+  background-color: #FF0000; /* Red color for delete */
+  color: white;
+  padding: 5px 8px;  /* Smaller padding for a smaller button */
+  font-size: 12px;  /* Smaller text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+li button:hover {
+  background-color: #cc0000;  /* Darker red on hover */
+}
+
+/* Styling for the search bar */
+.search-container {
+  width: 300px;
+  margin-top: 20px;
+}
+
+.search-box {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.search-box::placeholder {
+  color: #aaa;
+}
+
+/* Styling for the search button */
+.search-button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the definition box */
+.definition-box {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.definition-box h3 {
+  color: #007BFF;
+  font-size: 18px;
+}
+
+.definition-box p {
+  color: #333;
+}
+
+/* For the favorites button */
+.favorites-button {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.favorites-button:hover {
+  background-color: #218838;
+}
+
+.favorites-section {
+  margin-top: 20px;
+}
+
+/* Sidebar toggle button styling */
+.sidebar-toggle {
+  display: none;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .search-container {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+

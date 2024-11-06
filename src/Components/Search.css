@@ -1,0 +1,120 @@
+/* Global and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: #333;
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Title Styling */
+.title {
+    font-size: 2.5em;
+    color: #4e54c8;
+    margin-bottom: 20px; /* Reduced margin for better spacing */
+}
+
+/* Search Bar Styling */
+.search-bar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Reduced margin */
+}
+
+.search-bar input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    font-size: 1.2em;
+    border: 2px solid #4e54c8;
+    border-radius: 30px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-bar input:focus {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    color: #4e54c8;
+    font-size: 1.5em;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Results Section */
+.results {
+    margin-top: 20px;
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+}
+
+.result-item {
+    background: #f9f9f9;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.result-item:hover {
+    background-color: #f0f3ff;
+}
+
+.result-item h3 {
+    color: #4e54c8;
+    font-size: 1.4em;
+    margin-bottom: 5px;
+}
+
+.result-item p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Custom Scrollbar */
+.results::-webkit-scrollbar {
+    width: 8px;
+}
+
+.results::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.results::-webkit-scrollbar-thumb {
+    background-color: #4e54c8;
+    border-radius: 10px;
+}

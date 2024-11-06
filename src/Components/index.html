@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Medic Dictionary</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <h1 class="title">Medic Dictionary</h1>
+
+        <!-- Search Bar Section -->
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Search">
+            <button id="search-button">🔍</button>
+            <button id="add-to-favorites" class="fav-btn" disabled>❤ Add to Favorites</button>
+        </div>
+
+        <!-- Results Section -->
+        <div class="results" id="results-container"></div>
+    </div>
+
+    <!-- Side Panel for Favorites -->
+    <div class="side-panel" id="favorites-panel">
+        <h3>Favorites</h3>
+        <ul id="favorites-list">
+            <li>No favorites yet!</li>
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

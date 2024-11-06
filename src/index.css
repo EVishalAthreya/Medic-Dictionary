@@ -1,0 +1,125 @@
+/* index.css */
+
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  
+  /* Main container style */
+  .container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styling */
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    color: #4caf50;
+  }
+  
+  /* Search bar styling */
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-bar input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .search-bar button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  
+  .search-bar button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Term result styling */
+  .term-list {
+    list-style: none;
+  }
+  
+  .term-item {
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .term-item h2 {
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .term-item p {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  /* Favorites section styling */
+  .favorites {
+    margin-top: 30px;
+  }
+  
+  .favorites h2 {
+    font-size: 1.5em;
+    color: #4caf50;
+    margin-bottom: 10px;
+  }
+  
+  .favorite-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .favorite-item button {
+    padding: 5px 10px;
+    background-color: #ff5f5f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8em;
+  }
+  
+  .favorite-item button:hover {
+    background-color: #e04a4a;
+  }
+  
